@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tadian Municipality</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="Image/Tadian Logo.jpg" alt="Tadian Logo" class="navbar-logo">
+            Tadian Municipality
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="tourism.html">Tourism</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="navbar-search">
+                <form class="search-form d-flex">
+                    <input type="text" class="search-input" placeholder="Search..." aria-label="Search">
+                    <button type="submit" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <header class="page-header bg-success text-white py-5 mt-5">
+        <div class="container">
+            <h1 class="display-4">Contact Us</h1>
+            <p class="lead">Get in touch with Tadian Municipal Government</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <h2 class="text-success mb-4">Send us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="name" required>
+                                <div class="invalid-feedback">Please provide your full name.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">Please provide a valid email address.</div>
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label">Subject *</label>
+                                <select class="form-select" id="subject" required>
+                                    <option value="">Choose a subject...</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="services">Government Services</option>
+                                    <option value="complaint">Complaint</option>
+                                    <option value="suggestion">Suggestion</option>
+                                    <option value="tourism">Tourism Information</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="invalid-feedback">Please select a subject.</div>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                                <div class="invalid-feedback">Please enter your message.</div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="newsletter">
+                                    <label class="form-check-label" for="newsletter">
+                                        Subscribe to our newsletter for updates
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-success btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <h3 class="text-success mb-4">Contact Information</h3>
+                        
+                        <div class="contact-item mb-4">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-map-marker-alt fa-2x text-success me-3"></i>
+                                <div>
+                                    <h5>Address</h5>
+                                    <p>Municipal Hall, Poblacion<br>Tadian, Mountain Province<br>Philippines 2620</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item mb-4">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-phone fa-2x text-success me-3"></i>
+                                <div>
+                                    <h5>Phone Numbers</h5>
+                                    <p>Main: (074) 123-4567<br>Emergency: (074) 123-4568<br>Fax: (074) 123-4569</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item mb-4">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-envelope fa-2x text-success me-3"></i>
+                                <div>
+                                    <h5>Email Addresses</h5>
+                                    <p>General: info@tadian.gov.ph<br>Mayor's Office: mayor@tadian.gov.ph<br>Tourism: tourism@tadian.gov.ph</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item mb-4">
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-clock fa-2x text-success me-3"></i>
+                                <div>
+                                    <h5>Office Hours</h5>
+                                    <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 8:00 AM - 12:00 PM<br>Closed on Sundays and Holidays</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-contact mt-4">
+                            <h5 class="text-success mb-3">Follow Us</h5>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="btn btn-outline-success btn-sm">
+                                    <i class="fab fa-facebook-f me-2"></i>Facebook
+                                </a>
+                                <a href="#" class="btn btn-outline-success btn-sm">
+                                    <i class="fab fa-twitter me-2"></i>Twitter
+                                </a>
+                                <a href="#" class="btn btn-outline-success btn-sm">
+                                    <i class="fab fa-instagram me-2"></i>Instagram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center text-success mb-5">Visit Our Office</h2>
+            <div class="row">
+                <div class="col-12">
+                    <div class="map-container">
+                        <div id="map" class="rounded">
+                            <!-- Map will be loaded by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center text-success mb-5">Emergency Contacts</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card emergency-card text-center h-100">
+                        <div class="card-body">
+                            <i class="fas fa-ambulance fa-3x text-danger mb-3"></i>
+                            <h5 class="card-title">Emergency Medical</h5>
+                            <p class="card-text">24/7 Emergency Response</p>
+                            <p class="card-text"><strong>(074) 123-4570</strong></p>
+                            <small class="text-muted">Rural Health Unit</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card emergency-card text-center h-100">
+                        <div class="card-body">
+                            <i class="fas fa-shield-alt fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">Police Station</h5>
+                            <p class="card-text">24/7 Emergency Hotline</p>
+                            <p class="card-text"><strong>(074) 123-4572</strong></p>
+                            <small class="text-muted">Tadian Police Station</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card emergency-card text-center h-100">
+                        <div class="card-body">
+                            <i class="fas fa-fire-extinguisher fa-3x text-danger mb-3"></i>
+                            <h5 class="card-title">Fire Department</h5>
+                            <p class="card-text">Emergency Response</p>
+                            <p class="card-text"><strong>(074) 123-4573</strong></p>
+                            <small class="text-muted">Bureau of Fire Protection</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-mountain me-2"></i>Tadian Municipality</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>Municipal Hall, Poblacion, Tadian, Mountain Province</p>
+                    <p><i class="fas fa-envelope me-2"></i>Email: info@tadian.gov.ph</p>
+                    <p><i class="fas fa-phone me-2"></i>Phone: (074) 123-4567</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                    <p class="mt-3">&copy; 2025 Tadian Municipality. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="btn btn-success back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
