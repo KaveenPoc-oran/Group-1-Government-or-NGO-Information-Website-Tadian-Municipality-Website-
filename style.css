@@ -1,0 +1,870 @@
+/* Custom Styles for Tadian Municipality Website */
+
+:root {
+    --primary-color: #198754;
+    --secondary-color: #146c43;
+    --accent-color: #20c997;
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 76px;
+    background-color: #ffffff;
+}
+
+/* Navigation - Critical Fixes for GitHub Pages */
+.navbar {
+    background-color: #198754 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+    transition: all 0.3s ease;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.3rem;
+    display: flex !important;
+    align-items: center !important;
+    color: white !important;
+}
+
+.navbar-logo {
+    height: 40px !important;
+    width: auto !important;
+    margin-right: 10px !important;
+    display: block !important;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+    color: rgba(255,255,255,0.9) !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background-color: rgba(255,255,255,0.1);
+    transform: translateY(-2px);
+    color: white !important;
+}
+
+/* Ensure navbar is visible */
+.navbar-dark.bg-success {
+    background-color: #198754 !important;
+}
+
+/* Fix for mobile navigation */
+.navbar-toggler {
+    border: none !important;
+    color: rgba(255,255,255,0.8) !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Search Bar */
+.navbar-search {
+    margin-right: 15px;
+}
+
+.search-form {
+    display: flex !important;
+    align-items: center;
+}
+
+.search-input {
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #dee2e6 !important;
+    border-right: none;
+    padding: 8px 15px;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+    width: 250px;
+}
+
+.search-btn {
+    border-radius: 0 20px 20px 0;
+    border: 1px solid var(--primary-color) !important;
+    background: var(--primary-color) !important;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+    background: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    margin-top: -76px;
+}
+
+.hero-carousel {
+    height: 70vh;
+}
+
+.hero-carousel .carousel-item {
+    height: 70vh;
+}
+
+.hero-carousel .carousel-item img {
+    object-fit: cover !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    animation: fadeInUp 1s ease-in;
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    animation: fadeInUp 1.5s ease-in;
+    margin-bottom: 1rem;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(25, 135, 84, 0.6), rgba(20, 108, 67, 0.7));
+    z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    z-index: 3;
+}
+
+.carousel-indicators {
+    z-index: 3;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Page Headers */
+.page-header {
+    margin-top: 76px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+/* Cards */
+.card {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.service-card,
+.vision-card,
+.mission-card,
+.values-card,
+.cultural-card,
+.info-card,
+.form-card,
+.emergency-card {
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    z-index: 1000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    background-color: var(--primary-color) !important;
+    border: none;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    display: flex;
+}
+
+.back-to-top:hover {
+    background-color: var(--secondary-color) !important;
+    transform: translateY(-2px);
+}
+
+/* Tourism Gallery */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    transition: all 0.5s ease;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+/* Services Search */
+#servicesSearch {
+    border-radius: 25px;
+    padding: 15px 25px;
+    border: 2px solid var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.service-item {
+    transition: all 0.3s ease;
+}
+
+.service-item.highlight {
+    animation: highlightPulse 1s ease;
+}
+
+@keyframes highlightPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.service-meta {
+    margin-top: 10px;
+}
+
+.service-meta .badge {
+    font-size: 0.7rem;
+    margin-right: 5px;
+}
+
+/* Contact Form */
+.contact-form .form-control,
+.contact-form .form-select {
+    border-radius: 0.5rem;
+    border: 2px solid #e9ecef;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+    transform: translateY(-2px);
+}
+
+.contact-info .contact-item {
+    padding: 15px;
+    border-radius: 0.5rem;
+    background: var(--light-color);
+    transition: all 0.3s ease;
+}
+
+.contact-info .contact-item:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+/* Map Container */
+.map-container {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+#map {
+    height: 400px;
+    background: var(--light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#map:hover {
+    transform: scale(1.02);
+}
+
+/* News Cards */
+.news-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.news-date {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.announcement-item {
+    transition: all 0.3s ease;
+    border-left: 3px solid var(--primary-color);
+}
+
+.announcement-item:hover {
+    transform: translateX(5px);
+}
+
+/* News Ticker */
+.news-ticker .alert {
+    border-radius: 0.5rem;
+    border: none;
+    background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+}
+
+/* Official Cards */
+.official-card {
+    text-align: center;
+}
+
+.card-img-wrapper {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto 0;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--primary-color);
+}
+
+.official-card .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Cultural Features */
+.cultural-features .badge {
+    margin-top: 5px;
+}
+
+/* Event Calendar */
+.event-calendar .list-group-item {
+    border: none;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.event-calendar .list-group-item:hover {
+    border-left-color: var(--primary-color);
+    background-color: var(--light-color);
+}
+
+/* Footer */
+footer {
+    background: var(--dark-color) !important;
+}
+
+.social-links a {
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: var(--accent-color) !important;
+    transform: translateY(-3px);
+}
+
+.social-links-contact .btn {
+    transition: all 0.3s ease;
+}
+
+.social-links-contact .btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Modal Styles */
+.modal-content {
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.modal-header {
+    border-bottom: 2px solid var(--primary-color);
+    background: var(--light-color);
+}
+
+/* Table Styles */
+.table-hover tbody tr:hover {
+    background-color: rgba(25, 135, 84, 0.05);
+}
+
+/* Badge Styles */
+.badge {
+    font-weight: 500;
+}
+
+/* Search Highlight */
+.search-highlight {
+    background-color: #ffeb3b;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* Alert Styles */
+.alert {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.alert-dismissible .btn-close {
+    padding: 0.75rem;
+}
+
+/* Button Styles */
+.btn-success {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-success:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-outline-success {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Form Validation Styles */
+.is-valid {
+    border-color: var(--primary-color) !important;
+}
+
+.is-invalid {
+    border-color: #dc3545 !important;
+}
+
+.invalid-feedback {
+    display: block;
+}
+
+/* Carousel Fixes */
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding-top: 66px !important;
+    }
+    
+    .hero-section {
+        margin-top: -66px;
+    }
+    
+    .page-header {
+        margin-top: 66px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+    
+    .hero-carousel {
+        height: 50vh;
+    }
+    
+    .hero-carousel .carousel-item {
+        height: 50vh;
+    }
+    
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    #servicesSearch {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+    
+    .card-img-wrapper {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .navbar-search {
+        margin: 10px 0;
+        order: 3;
+        width: 100%;
+    }
+    
+    .search-form {
+        width: 100%;
+    }
+    
+    .search-input {
+        width: 100%;
+    }
+    
+    .search-input:focus {
+        width: 100%;
+    }
+    
+    .navbar-collapse {
+        text-align: center;
+    }
+    
+    .navbar-nav {
+        margin: 10px 0;
+    }
+    
+    .gallery-item img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .hero-carousel {
+        height: 40vh;
+    }
+    
+    .hero-carousel .carousel-item {
+        height: 40vh;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .back-to-top,
+    footer,
+    .btn,
+    .carousel-control,
+    .carousel-indicators {
+        display: none !important;
+    }
+    
+    body {
+        padding-top: 0;
+    }
+    
+    .page-header {
+        margin-top: 0;
+    }
+    
+    .card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
+
+/* Utility Classes */
+.text-shadow {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.border-success {
+    border-color: var(--primary-color) !important;
+}
+
+.bg-gradient-success {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus,
+.form-control:focus,
+.form-select:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #006400;
+        --secondary-color: #004d00;
+    }
+    
+    .card {
+        border: 2px solid #333;
+    }
+    
+    .navbar {
+        border-bottom: 2px solid #000;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .hero-text h1,
+    .hero-text p {
+        animation: none;
+    }
+    
+    .card:hover {
+        transform: none;
+    }
+    
+    .gallery-item:hover img {
+        transform: none;
+    }
+    
+    .gallery-overlay {
+        transform: translateY(0);
+        position: relative;
+        background: var(--dark-color);
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+    
+    .card {
+        background-color: #2d2d2d;
+        color: #e0e0e0;
+    }
+    
+    .bg-light {
+        background-color: #2d2d2d !important;
+    }
+    
+    .text-muted {
+        color: #a0a0a0 !important;
+    }
+}
+
+/* Fix for Bootstrap conflicts */
+.navbar-collapse.collapse.show {
+    display: block !important;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Ensure proper z-index stacking */
+.navbar {
+    z-index: 1030;
+}
+
+.modal {
+    z-index: 1060;
+}
+
+.back-to-top {
+    z-index: 1040;
+}
+
+/* Fix for carousel in mobile */
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    display: block;
+}
+
+/* Loading states */
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
